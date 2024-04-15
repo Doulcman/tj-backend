@@ -1,0 +1,14 @@
+#下面这些内容是为了让MyBatis映射
+#指定Mybatis的Mapper文件
+mybatis:
+  mapper-locations: classpath:mapper/*xml
+  type-aliases-package: com.tj.backend.mapper
+
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/xsql?useSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
